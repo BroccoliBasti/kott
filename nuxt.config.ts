@@ -6,7 +6,7 @@ export default defineNuxtConfig({
 
   app: {
     head: {
-      link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+      link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }]
     },
   },
   
@@ -17,7 +17,13 @@ export default defineNuxtConfig({
     },
   },
 
-  modules: ["@nuxtjs/i18n", "@nuxt/icon", "@nuxtjs/tailwindcss", "shadcn-nuxt"],
+  modules: [
+    "@nuxtjs/i18n",
+    "@nuxt/icon",
+    "@nuxtjs/tailwindcss",
+    "shadcn-nuxt",
+    "@nuxt/image"
+  ],
 
   shadcn: {
     prefix: '',

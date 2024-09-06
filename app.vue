@@ -1,10 +1,15 @@
 <script setup>
 
+useSeoMeta({
+  title: 'Kott.fi - Skräddarsydda webbsidor från Österbotten',
+  ogTitle: 'Kott.fi - Skräddarsydda webbsidor från Österbotten',
+  description: 'Vi skapar moderna och unika webbsidor för företagare, som är användarvänliga och anpassade för behov och önskemål.',
+  ogDescription: 'Vi skapar moderna och unika webbsidor för företagare, som är användarvänliga och anpassade för behov och önskemål.',
+  ogImage: '/img/kott_logo.webp',
+  twitterCard: 'summary_large_image',
+  ogUrl: 'kott.fi',
+});
 useHead({
-  title: 'Kott',
-  meta: [
-    { name: 'description', content: 'Vi skapar moderna och unika webbsidor som är användarvänliga och anpassade enligt dina behov och önskemål.' }
-  ],
   htmlAttrs: {
     lang: 'sv'
   },
@@ -16,102 +21,33 @@ useHead({
 <template>
   <NuxtRouteAnnouncer />
   <NuxtLoadingIndicator />
-  <div class="min-h-svh flex flex-col justify-evenly">
+  <div class="min-h-svh flex flex-col">
     <!-- <KottNav /> -->
-    <!-- <LanguagePicker /> -->
     <NuxtPage />
-    <div class="spacer waves -z-50"></div>
     <KottFooter />
   </div>
 </template>
 
 <style>
+*:focus-visible {
+  @apply ring-2 ring-offset-2 ring-offset-transparent ring-foreground !important
+}
+
 *::selection {
-  @apply bg-foreground text-background
+  @apply bg-foreground text-apricot-50
 }
 
 html {
-  @apply bg-background text-foreground font-calistoga tracking-widest
+  @apply bg-apricot-50 text-foreground font-sans tracking-widest scroll-smooth
 }
 
 body {
-  background-color: #fee9e2;
-  background-image: radial-gradient(circle, #ffffff 25%,
-      #fee9e2 100%);
+  background-color: #fff;
+  background-image: radial-gradient(circle, #fffaef80 75%, #ffeedf 90%);
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
   filter: hue-rotate(0deg);
   height: 100%;
-  /* animation: bg-colors 12s linear infinite; */
 }
-
-.spacer {
-  aspect-ratio: 960/145;
-  width: 100%;
-  height: fit-content;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-
-}
-
-.waves {
-  background-image: url('public/img/waves.svg');
-}
-
-/*@keyframes bg-colors {
-
-  0%,
-  100% {
-    filter: hue-rotate(360deg);
-  }
-
-  15% {
-    filter: hue-rotate(300deg);
-  }
-
-  20% {
-    filter: hue-rotate(288deg);
-  }
-
-  35% {
-    filter: hue-rotate(228deg);
-  }
-
-  40% {
-    filter: hue-rotate(216deg);
-  }
-
-  65% {
-    filter: hue-rotate(156deg);
-  }
-
-  70% {
-    filter: hue-rotate(144deg);
-  }
-
-  85% {
-    filter: hue-rotate(84deg);
-  }
-
-  90% {
-    filter: hue-rotate(72deg);
-  }
-
-  95% {
-    filter: hue-rotate(60deg);
-  }
-} */
-
-/* @keyframes bg-colors {
-
-  from {
-    filter: hue-rotate(360deg);
-  }
-
-  to {
-    filter: hue-rotate(0deg);
-  }
-} */
 </style>
