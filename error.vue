@@ -2,7 +2,7 @@
     <section
         class="container grid grid-flow-row gap-2 sm:gap-6 justify-center content-center text-center h-full min-h-svh">
         <h1 class="font-serif text-[calc(3rem+10vw)] leading-none">
-            <span class="text-rose-900 font-bold">{{ error.statusCode
+            <span class="font-bold drop-shadow">{{ error.statusCode
                 }}</span>
         </h1>
         <h2 class="text-xl sm:text-3xl">
@@ -10,9 +10,6 @@
             <br>
             {{ error.statusMessage }}
         </h2>
-        <!-- <p class="text-xl">
-            Använd knappen nedan för att komma tillbaks
-        </p> -->
         <Button as-child variant="outline" class="flex flex-row items-center mx-auto gap-1 text-xl border-2 px-2 border-foreground bg-inherit rounded-md font-semibold size-fit leading-6 hover:leading-6
             antialiased 
                 hover:subpixel-antialiased
@@ -32,11 +29,11 @@
 
 <script setup>
 defineProps({ error: Object });
-useHead({
-    title: 'Oops!'
-});
-
 const error = useError();
+
+useHead({
+    title: `Oops! ${error.value.statusCode} | Kott.fi`
+});
 
 const handleError = () => {
     clearError({

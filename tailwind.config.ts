@@ -77,19 +77,6 @@ module.exports = {
           900: '#F3976F',
           950: '#41090b',
         },
-        // apricot: {
-        //   50: '#fef3ee',
-        //   100: '#fee3d6',
-        //   200: '#fbc4ad',
-        //   300: '#f89571',
-        //   400: '#f56742',
-        //   500: '#f1401e',
-        //   600: '#e32713',
-        //   700: '#bc1a12',
-        //   800: '#951717',
-        //   900: '#781716',
-        //   950: '#41090b',
-        // },
         mortar: {
           50: '#f8f7f8',
           100: '#f3f0f3',
@@ -101,7 +88,7 @@ module.exports = {
           700: '#795d72',
           800: '#654f5f',
           900: '#5b4856',
-          950: '#32252e',
+          950: '#3f313b',
         },
         pine: {
           50: '#f1fde8',
@@ -162,6 +149,18 @@ module.exports = {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
+      dropShadow: {
+        apricot: [
+          "0 2px 2px rgba(25.49, 3.5294, 4.3137, 0.15)", 
+          "0 1px 1px rgba(25.49, 3.5294, 4.3137, 0.07)"
+        ],
+        highlight: [
+          "0px 1px 1px #ffeedf",
+          "1px 0px 1px #ffeedf",
+          "0px -1px 1px #ffeedf",
+          "-1px 0px 1px #ffeedf"
+        ]
+      },
       keyframes: {
         "accordion-down": {
           from: { height: 0 },
@@ -179,96 +178,120 @@ module.exports = {
           from: { height: 'var(--radix-collapsible-content-height)' },
           to: { height: 0 },
         },
-        "rolling-text": {
-          '0%': {
-            top: '0'
-          },
+        // "rolling-text": {
+        //   '0%': {
+        //     top: '0'
+        //   },
 
-          '8%': {
-              top: '0'
-          },
+        //   '8%': {
+        //       top: '0'
+        //   },
 
-          '10%': {
-              top: 'calc(var(--jump-length)*-1)'
-          },
+        //   '10%': {
+        //       top: 'calc(var(--jump-length)*-1)'
+        //   },
 
-          '18%': {
-              top: 'calc(var(--jump-length)*-1)'
-          },
+        //   '18%': {
+        //       top: 'calc(var(--jump-length)*-1)'
+        //   },
 
-          '20%': {
-              top: 'calc(var(--jump-length)*-2)'
-          },
+        //   '20%': {
+        //       top: 'calc(var(--jump-length)*-2)'
+        //   },
 
-          '28%': {
-              top: 'calc(var(--jump-length)*-2)'
-          },
+        //   '28%': {
+        //       top: 'calc(var(--jump-length)*-2)'
+        //   },
 
-          '30%': {
-              top: 'calc(var(--jump-length)*-3)'
-          },
+        //   '30%': {
+        //       top: 'calc(var(--jump-length)*-3)'
+        //   },
 
-          '38%': {
-              top: 'calc(var(--jump-length)*-3)'
-          },
+        //   '38%': {
+        //       top: 'calc(var(--jump-length)*-3)'
+        //   },
 
-          '40%': {
-              top: 'calc(var(--jump-length)*-4)'
-          },
+        //   '40%': {
+        //       top: 'calc(var(--jump-length)*-4)'
+        //   },
 
-          '48%': {
-              top: 'calc(var(--jump-length)*-4)'
-          },
+        //   '48%': {
+        //       top: 'calc(var(--jump-length)*-4)'
+        //   },
 
-          '50%': {
-              top: 'calc(var(--jump-length)*-5)'
-          },
+        //   '50%': {
+        //       top: 'calc(var(--jump-length)*-5)'
+        //   },
 
-          '58%': {
-              top: 'calc(var(--jump-length)*-5)'
-          },
+        //   '58%': {
+        //       top: 'calc(var(--jump-length)*-5)'
+        //   },
 
-          '60%': {
-              top: 'calc(var(--jump-length)*-6)'
-          },
+        //   '60%': {
+        //       top: 'calc(var(--jump-length)*-6)'
+        //   },
 
-          '68%': {
-              top: 'calc(var(--jump-length)*-6)'
-          },
+        //   '68%': {
+        //       top: 'calc(var(--jump-length)*-6)'
+        //   },
 
-          '70%': {
-              top: 'calc(var(--jump-length)*-7)'
-          },
+        //   '70%': {
+        //       top: 'calc(var(--jump-length)*-7)'
+        //   },
 
-          '78%': {
-              top: 'calc(var(--jump-length)*-7)'
-          },
+        //   '78%': {
+        //       top: 'calc(var(--jump-length)*-7)'
+        //   },
 
-          '80%': {
-              top: 'calc(var(--jump-length)*-8)'
-          },
+        //   '80%': {
+        //       top: 'calc(var(--jump-length)*-8)'
+        //   },
 
-          '88%': {
-              top: 'calc(var(--jump-length)*-8)'
-          },
+        //   '88%': {
+        //       top: 'calc(var(--jump-length)*-8)'
+        //   },
 
-          '90%': {
-              top: 'calc(var(--jump-length)*-9)'
-          },
+        //   '90%': {
+        //       top: 'calc(var(--jump-length)*-9)'
+        //   },
 
-          '98%': {
-              top: 'calc(var(--jump-length)*-9)'
-          }
-        },
+        //   '98%': {
+        //       top: 'calc(var(--jump-length)*-9)'
+        //   }
+        // },
         "page-load": {
           from: {
-            transform: 'translateY(2%)',
-            filter: 'blur(2px) contrast(200%) brightness(1000%) saturation(100%)',
+            transform: 'translateY(1rem)',
+            filter: 'blur(1px)',
             opacity: '0%'
           },
           to: {
               transform: 'translateY(0)',
-              filter: 'blur(0px) contrast(100%) brightness(100%)',
+              filter: 'blur(0px)',
+              opacity: '100%'
+          }
+        },
+        "page-load-2": {
+          '0%, 25%': {
+            transform: 'translateY(1rem)',
+            filter: 'blur(1px)',
+            opacity: '0%'
+          },
+          '100%': {
+              transform: 'translateY(0)',
+              filter: 'blur(0px)',
+              opacity: '100%'
+          }
+        },
+        "page-load-3": {
+          '0%, 50%': {
+            transform: 'translateY(1rem)',
+            filter: 'blur(1px)',
+            opacity: '0%'
+          },
+          '100%': {
+              transform: 'translateY(0)',
+              filter: 'blur(0px)',
               opacity: '100%'
           }
         },
@@ -303,15 +326,14 @@ module.exports = {
         "accordion-up": "accordion-up 0.2s ease-out",
         "collapsible-down": "collapsible-down 0.2s ease-in-out",
         "collapsible-up": "collapsible-up 0.2s ease-in-out",
-        "rolling-text": 'rolling-text 24s ease-in-out infinite',
+        "rolling-text": 'rolling-text 36s ease-in-out infinite',
         "page-load": 'page-load 1.2s ease',
+        "page-load-2": 'page-load-2 1.2s ease',
+        "page-load-3": 'page-load-3 1.2s ease',
         "off-screen": 'off-screen 1.2s',
         "wiggle": "wiggle .75s ease-in-out"
       },
     },
   },
   plugins: [animate],
-  // plugins: [
-  //     require('tailwindcss-animated')
-  // ]
 }

@@ -1,0 +1,108 @@
+{
+  "meta_title_main": "Handgjorda webbsidor, tillgängliga för alla - Kott.fi",
+  "meta_description_main": "Vi skapar moderna och unika webbsidor för företagare, som är användarvänliga och anpassade för behov och önskemål.",
+  "meta_description_work": "Tidigare arbeten från Kott. Hemsidor som är handgjorda med omsorg och kärlek för att passa de företag som de representerar.",
+  "meta_description_privacy": "Vår integritetspolicy som beskriver vilken data vi behandlar och hur, samt vad dina rättigheter är.",
+  "logo_description": "En kotte som lutar mot namnet Kott, vars bokstav o har en muspekare som hål.",
+  
+  "mission_statement_0": "Webbsidor för alla",
+  "mission_statement_1": "Webbsidor för dig",
+  "mission_statement_2": "Moderna och användarvänliga webbsidor",
+  "mission_statement_3": "handgjorda i Österbotten.",
+  "kort_och_gott": "Kort och gott",
+  
+  "benefits": "fördelar",
+  "benefits_statement": "Våra webbsidor är:",
+  "benefits_text": "Korta och goda. Vårt företagsnamn är ett teleskopord bestående av orden 'kort' och 'gott'. Vi tror att en hemsida är mest effektiv när allt överflödigt skalats bort så att endast det goda återstår som man vill visa sina kunder.",
+  "adj_1": "Moderna",
+  "adj_2": "Användarvänliga",
+  "adj_3": "Unika",
+  "adj_4": "Attraktiva",
+  "adj_5": "Snabba",
+  "adj_6": "Optimerade",
+
+  "card_content_1": "Våra webbsidor är skapade med den senaste teknologin, vilket gör dem snabba och säkra.",
+  "card_content_2": "Nå ut till en bredare kundkrets med webbsidor som är anpassade för alla. Ju fler desto bättre.",
+  "card_content_3": "Trött på platta och tråkiga webbsidor? Det är dina kunder också. Vi hjälper dig utveckla en egen stil.",
+  "card_content_4": "Ett stiligt och fräscht utseende lockar besökare och får dem att stanna längre.",
+  "card_content_5": "Blixtrande snabba webbsidor så att ingen besökare vänder vid en laddande skärm.",
+  "card_content_6": "Sökmotoroptimering (SEO) gör att din sida är högst upp bland resultaten när en relevant sökning görs på nätet.",
+  
+  "contact": "kontakt",
+  "get_in_touch": "Ta kontakt",
+  "read_more": "Läs mer",
+  "contact_message": "Berätta om dina behov och önskemål. Boka ett möte helt kostnadsfritt.",
+  "beanie_alt": "Sebastian iklädd en beige mössa ler och tittar mot kontaktinformationen.",
+  "maybe_you": "Och kanske du?",
+  "maybe_you_message": "Ta kontakt för att diskutera era behov och få en gratis offert.",
+  "last_updated": "Senast uppdaterad",
+
+  "language": "SV",
+  "language_sv": "svenska",
+  "language_en": "engelska - english",
+  "made_by": "Skapad med ❤ av",
+  "agree_check": "Jag har läst och godkänner er11",
+  "privacy_policy": "Integritetspolicy",
+  "privacy_policy_slug": "integritetspolicy",
+  "back": "Tillbaka",
+
+  "earlier_work": "Tidigare arbeten",
+  "visit_here": "Du kan besöka webbsidan på ",
+
+  "privacy_maintainer": "Registeransvarig",
+  "phone": "telefon",
+  "email": "epost",
+  "address": "adress",
+  "number": " nummer",
+  "personal_name": "personliga namn",
+  "organization_name": "organisationens namn",
+
+  "privacy_h_1": "Vilka uppgifter hanteras",
+  "privacy_1_text_1": "Den personliga information som vi samlar in är begränsad till det som du uttryckligen delar med dig av när du kontaktar oss. Personlig information som kan vara nödvändig att behandla för att tillhandahålla våra tjänster inkluderar",
+
+  "privacy_h_2": "Hur samlas uppgifterna in",
+  "privacy_2_text_1": "Du tillhandahåller uttryckligen de uppgifter som samlas in. Vi samlar och behandlar uppgifter som du ger oss genom att ta kontakt. Telefonnummer fås när du ringer eller skickar textmeddelande till oss, epostadress och eventuellt namn fås när du skickar epost till oss. Övriga uppgifter ger du självmant",
+
+  "privacy_h_3": "Hur används uppgifterna",
+  "privacy_3_text_1": "Vi samlar dina uppgifter för att kunna",
+  "privacy_3_text_2": "utföra vårt arbete och för att veta när, var, hur, och för vem",
+  "privacy_3_text_3": "hålla dig informerad om hur arbetet fortskrider eller om någonting oväntat händer",
+  "privacy_3_text_4": "dokumentatera för till exempel lagliga ärenden och skatteärenden",
+  "privacy_3_text_5": "undvika bedrägeri och andra olagliga aktiviteter",
+  "privacy_3_text_6": "Uppgifterna delas inte med tredje part",
+
+  "privacy_h_4": "Hur lagras uppgifterna",
+  "privacy_4_text_1": "De uppgifter du delar med dig av kommer antingen att lagras i form av ett epostmeddelande på vår leverantörs tjänst eller som ett textmeddelande på telefon. Om du fått ett svar från oss är du sannolikt tillagd i kontaktlistan. Uppgifterna lagras tills du begär deras radering",
+  
+  "privacy_h_5": "Radering av dina uppgifter",
+  "privacy_5_text_1": "Delar eller helheten av dina uppgifter kan raderas vid begäran. Vi agerar inom en månad från och med att vi mottagit din begäran, förutsatt att det inte förekommer några tekniska eller lagliga hinder",
+  
+  "privacy_h_6": "Vilka är dina rättigheter gällande dina uppgifter",
+  "privacy_6_text_1": "Vi vill säkerställa oss om att du är fullt medveten om dina dataskyddsrättigheter. Till en användares rättigheter gällande datahantering hör följande",
+  "right_to_access": "Rätt till tillgång",
+  "right_to_access_text": "Du har rätt att begära kopior av dina lagrade uppgifter",
+  "right_to_rectification": "Rätt till rättelse",
+  "right_to_rectification_text": " Du har rätt att kräva rättelse av uppgifter som du anser vara ofullständiga eller felaktiga",
+  "right_to_erasure": "Rätt till radering",
+  "right_to_erasure_text": "Du har rätt att begära att dina uppgifter raderas, delvis eller fullständigt",
+  "right_to_restrict": "Rätt till begränsning av behandling",
+  "right_to_restrict_text": "Du har rätt att begära att bearbetningen av dina uppgifter begränsas",
+  "right_to_object": "Rätt att göra invändningar",
+  "right_to_object_text": "Du har rätt att motsäga insamlingen och bearbetningen av dina uppgifter",
+  "right_to_portability": "Rätt till dataportabilitet",
+  "right_to_portability_text": " Du har rätt att begära att dina uppgifter överförs till dig själv eller till tredje part",
+  "privacy_6_text_2": "Om du önskar uträtta rättigheter, vänligen kontakta oss via epost. Vi svarar inom en månad från att vi mottagit er begäran",
+  
+  "privacy_h_7": "Kakor",
+  "privacy_7_text_1": "Den här webbsidan använder sig inte av kakor",
+  
+  "privacy_h_8": "Andra webbsidors integritetspolicyn",
+  "privacy_8_text_1": "Denna webbsida innehåller länkar till andra webbsidor. Denna integritetspolicy gäller enbart för denna webbsida. Om du följer en länk till en annan webbsida borde du därför läsa deras integritetspolicy",
+  
+  "privacy_h_9": "Ändringar av integritetspolicyn",
+  "privacy_9_text_1": "Eventuella uppdateringar för integritetspolicyn görs här. Denna integritetspolicy uppdaterades senast",
+  
+  "privacy_h_10": "Hur du kan ta kontakt",
+  "privacy_10_text_1": "Om du har några som helst frågor kring vår integritetspolicy, vänligen ta kontakt via ",
+  "privacy_10_text_2": "Vi svarar så fort som möjligt"
+}

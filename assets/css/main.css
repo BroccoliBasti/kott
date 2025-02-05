@@ -20,8 +20,10 @@
   }
 
   :root {
-    --background: 47 18% 90%;
-    --foreground: 315 7% 11%;
+    --jump-length: 6.5rem;
+  
+    --background: 38 100% 98%;
+    --foreground: 10 26% 9%;
  
     --muted: 315 7% 45%;
     --muted-foreground: 315 12% 32%;
@@ -32,7 +34,7 @@
     --card: 47 18% 96.1%;
     --card-foreground: 315 7% 11%;
  
-    --border: 47 18% 90%;
+    --border: 22 100% 90%;
     --input: 315 7% 90%;
  
     --primary: 18 91% 83%;
@@ -56,35 +58,22 @@
     --poppy-red: 332, 69%, 23%;
     --daisy-yellow: 61, 69%, 23%;
   }
- 
-  /* .dark {
-    --background: 0 0% 3.9%;
-    --foreground: 0 0% 98%;
- 
-    --muted: 0 0% 14.9%;
-    --muted-foreground: 0 0% 63.9%;
- 
-    --popover: 0 0% 3.9%;
-    --popover-foreground: 0 0% 98%;
- 
-    --card: 0 0% 3.9%;
-    --card-foreground: 0 0% 98%;
- 
-    --border: 0 0% 14.9%;
-    --input: 0 0% 14.9%;
- 
-    --primary: 0 0% 98%;
-    --primary-foreground: 0 0% 9%;
- 
-    --secondary: 0 0% 14.9%;
-    --secondary-foreground: 0 0% 98%;
- 
-    --accent: 0 0% 14.9%;
-    --accent-foreground: 0 0% 98%;
- 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 98%;
- 
-    --ring: 0 0% 83.1%;
-  } */
+
+  @media (max-width:768px) {
+    :root {
+        --jump-length: 2.25rem;
+    }
+  }
+
+  *:focus-visible {
+    @apply ring-2 ring-offset-2 ring-offset-transparent outline-none ring-foreground rounded-sm !important
+  }
+  
+  *::selection {
+    @apply bg-foreground text-apricot-50 drop-shadow-none shadow-none
+  }
+  
+  html {
+    @apply bg-[radial-gradient(circle_at_top,hsl(var(--background))_0%,#FFEEDF_80%)] text-foreground font-sans tracking-widest scroll-smooth [scrollbar-color:_#3f313b_#FFDFCD] [scrollbar-width:thin]
+  }  
 }

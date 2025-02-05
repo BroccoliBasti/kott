@@ -7,7 +7,7 @@
    id="svg1"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg"
-   fill="#1e1a1d">
+   fill="var(--foreground)">
   <defs
      id="defs1" />
   <g

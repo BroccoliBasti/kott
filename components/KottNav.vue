@@ -1,25 +1,24 @@
+<script setup>
+const { locale, t } = useI18n();
+const localePath = useLocalePath();
+
+const goBack = () => {
+    if (locale.value == 'sv')
+        return;
+};
+</script>
 <template>
-    <nav class="tracking-wide">
-        <ul class="list-none flex justify-evenly p-4">
-            <li
-                class="bg-foreground text-white rounded-lg drop-shadow-aura hover:scale-105 hover:-rotate-1 transition-all ease-in-out duration-300 group decoration-blue focus:outline-none focus:border-blue">
-                <NuxtLink to="/"
-                    class="flex px-4 py-2 lg:px-6 lg:py-3 lg:text-xl group-hover:underline focus-within:underline decoration-2 decoration-blue transition-all">
-                    Home</NuxtLink>
-            </li>
-            <li
-                class="bg-foreground text-white rounded-lg drop-shadow-aura hover:scale-105 hover:rotate-1 transition-all ease-in-out duration-300 group">
-                <NuxtLink to="/contact"
-                    class="flex px-4 py-2 lg:px-6 lg:py-3 lg:text-xl group-hover:underline focus-within:underline decoration-2 decoration-green transition-all">
-                    Contact
-                </NuxtLink>
-            </li>
-            <li
-                class="bg-foreground text-white rounded-lg drop-shadow-aura hover:scale-105 hover:-rotate-1  transition-all ease-in-out duration-300 group">
-                <NuxtLink to="/portfolio"
-                    class="flex px-4 py-2 lg:px-6 lg:py-3 lg:text-xl group-hover:underline focus-within:underline decoration-2 decoration-red transition-all">
-                    Portfolio</NuxtLink>
-            </li>
-        </ul>
+    <nav>
+        <!-- <Button variant='link' @click="history.back()"
+            class="absolute h-11 hover:decoration-1 top-[2vh] start-2 md:start-[calc(1rem+5vw)] z-50">
+            <Icon name="lucide-arrow-left"></Icon>
+            {{ $t('back') }}
+
+        </Button> -->
+        <NuxtLink :to="localePath('/')">
+            <NuxtImg src="/img/kott_logo.webp" width="875" height="235" format="webp,png" :alt="t('logo_description')"
+                class="w-fit drop-shadow selection:bg-transparent h-7 sm:h-11 absolute top-[1rem] sm:top-[2svh] left-2 translate-x-[calc(50svw-64%)] z-50">
+            </NuxtImg>
+        </NuxtLink>
     </nav>
 </template>

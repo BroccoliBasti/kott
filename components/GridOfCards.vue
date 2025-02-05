@@ -1,152 +1,137 @@
+<script setup>
+let locale = {
+    code: 'fi-sv'
+};
+</script>
 <template>
     <div class="container grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 gap-2">
 
         <Card
-            class="bg-transparent border-none shadow-none text-center hover:bg-apricot-50 hover:shadow-inner hover:shadow-apricot-100 transition-all duration-300">
-            <CardHeader class="py-4 gap-4 drop-shadow-sm">
-                <span
-                    class=" bg-mortar-950 rounded-full size-fit p-2 flex items-center justify-center drop-shadow mx-auto">
-                    <Icon name="lucide-badge-check" size="2rem" class="text-apricot-50"></Icon>
+            class="group items-center flex flex-col bg-transparent border-none shadow-none text-start hover:bg-apricot-50 hover:drop-shadow-xl transition-all duration-300">
+            <CardHeader class="gap-2 drop-shadow-sm">
+                <span class="bg-gradient-to-t from-mortar-950 to-mortar-900 shadow-sm group-hover:-translate-y-1 group-hover:shadow-md group-hover:shadow-apricot-950/25 duration-700 
+                    transition-all
+                    rounded-full size-fit p-2 flex items-center drop-shadow mx-auto">
+                    <Icon name="lucide-sparkles" size="2rem" class="text-apricot-50  transition-all"></Icon>
                 </span>
-                <CardTitle class="capitalize cursor-default font-serif tracking-wide text-3xl">{{ $t('adj_1') }}
+                <CardTitle :lang="locale.code" class="break-words hyphens-auto font-serif tracking-wide text-2xl mt-2">
+                    {{
+                        $t('adj_1')
+                    }}
                 </CardTitle>
             </CardHeader>
-            <CardContent class="text-mortar-950 max-w-prose">
+            <CardContent
+                class="text-mortar-950/90 max-w-prose text-balance text-center text-xs xs:text-sm leading-snug -mt-4">
                 {{ $t('card_content_1') }}
             </CardContent>
-            <!-- <CardFooter>
-                <Button as-child>
-                    <a href="#">
-                        <span class=" bg-mortar-950 rounded-full size-fit p-2 flex items-center justify-center drop-shadow mx-auto">
-                            <Icon name="lucide-arrow-right"></Icon>
-                        </span>Läs mer 
-                    </a>
-                </Button>
-            </CardFooter> -->
         </Card>
 
+        <hr class="visible xs:hidden border-mortar-950/50 border-[1px] rounded-full border-dashed">
+
         <Card
-            class="bg-transparent border-none shadow-none text-center hover:bg-apricot-50 hover:shadow-inner hover:shadow-apricot-100 transition-all duration-300 ">
-            <CardHeader class="p-0 pb-4 sm:py-4 drop-shadow-sm">
-                <span
-                    class=" bg-mortar-950 rounded-full size-fit p-2 flex items-center justify-center drop-shadow mx-auto">
-                    <Icon name="lucide-fingerprint" size="2rem" class="text-apricot-50"></Icon>
+            class="group items-center flex flex-col bg-transparent border-none shadow-none text-start hover:bg-apricot-50 hover:drop-shadow-xl transition-all duration-300">
+            <CardHeader class="gap-2 drop-shadow-sm">
+                <span class="bg-gradient-to-t from-mortar-950 to-mortar-900 shadow-sm group-hover:-translate-y-1 group-hover:shadow-md group-hover:shadow-apricot-950/25 duration-700 
+                    transition-all rounded-full size-fit p-2 flex items-center drop-shadow mx-auto">
+                    <Icon name="lucide-heart-handshake" size="2rem" class="text-apricot-50  transition-all">
+                    </Icon>
                 </span>
-                <CardTitle class="capitalize cursor-default font-serif tracking-wide text-3xl p-0">{{
-                    $t('adj_2') }}
+                <CardTitle :lang="locale.code"
+                    class="break-words hyphens-auto font-serif tracking-wide text-2xl mt-2 p-0">{{
+                        $t('adj_2') }}
                 </CardTitle>
             </CardHeader>
-            <CardContent class="text-mortar-950 max-w-prose p-0">
+            <CardContent
+                class="text-mortar-950/90 max-w-prose text-balance text-center text-xs xs:text-sm leading-snug -mt-4">
                 {{ $t('card_content_2') }}
             </CardContent>
-            <!-- <CardFooter>
-                <Button as-child>
-                    <a href="#">
-                        <span class=" bg-mortar-950 rounded-full size-fit p-2 flex items-center justify-center drop-shadow mx-auto">
-                            <Icon name="lucide-arrow-right"></Icon>
-                        </span>Läs mer 
-                    </a>
-                </Button>
-            </CardFooter> -->
         </Card>
 
-        <Card
-            class="bg-transparent border-none shadow-none text-center hover:bg-apricot-50 hover:shadow-inner hover:shadow-apricot-100 transition-all duration-300 ">
-            <CardHeader class="py-4 gap-4 drop-shadow-sm">
-                <span
-                    class=" bg-mortar-950 rounded-full size-fit p-2 flex items-center justify-center drop-shadow mx-auto">
+        <hr class="visible xs:hidden border-mortar-950/50 border-[1px] rounded-full border-dashed">
 
-                    <Icon name="lucide-heart-handshake" size="2rem" class="text-apricot-50"></Icon>
+        <Card
+            class="group items-center flex flex-col bg-transparent border-none shadow-none text-start hover:bg-apricot-50 hover:drop-shadow-xl transition-all duration-300">
+            <CardHeader class="gap-2 drop-shadow-sm">
+                <span class="bg-gradient-to-t from-mortar-950 to-mortar-900 shadow-sm group-hover:-translate-y-1 group-hover:shadow-md group-hover:shadow-apricot-950/25 duration-700 
+                    transition-all rounded-full size-fit p-2 flex items-center drop-shadow mx-auto">
+
+                    <Icon name="lucide-fingerprint" size="2rem" class="text-apricot-50  transition-all">
+                    </Icon>
                 </span>
-                <CardTitle class="capitalize cursor-default font-serif tracking-wide text-3xl">{{ $t('adj_3') }}
+                <CardTitle :lang="locale.code" class="break-words hyphens-auto font-serif tracking-wide text-2xl mt-2">
+                    {{
+                        $t('adj_3')
+                    }}
                 </CardTitle>
             </CardHeader>
-            <CardContent class="text-mortar-950 max-w-prose">
+            <CardContent
+                class="text-mortar-950/90 max-w-prose text-balance text-center text-xs xs:text-sm leading-snug -mt-4">
                 {{ $t('card_content_3') }}
             </CardContent>
-            <!-- <CardFooter>
-                <Button as-child>
-                    <a href="#">
-                        <span class=" bg-mortar-950 rounded-full size-fit p-2 flex items-center justify-center drop-shadow mx-auto">
-                            <Icon name="lucide-arrow-right"></Icon>
-                        </span>Läs mer 
-                    </a>
-                </Button>
-            </CardFooter> -->
         </Card>
 
+        <hr class="visible xs:hidden border-mortar-950/50 border-[1px] rounded-full border-dashed">
+
         <Card
-            class="bg-transparent border-none shadow-none text-center hover:bg-apricot-50 hover:shadow-inner hover:shadow-apricot-100 transition-all duration-300 ">
-            <CardHeader class="py-4 gap-4 drop-shadow-sm">
-                <span
-                    class=" bg-mortar-950 rounded-full size-fit p-2 flex items-center justify-center drop-shadow mx-auto">
-                    <Icon name="lucide-eye" size="2rem" class="text-apricot-50"></Icon>
+            class="group items-center flex flex-col bg-transparent border-none shadow-none text-start hover:bg-apricot-50 hover:drop-shadow-xl transition-all duration-300">
+            <CardHeader class="gap-2 drop-shadow-sm">
+                <span class="bg-gradient-to-t from-mortar-950 to-mortar-900 shadow-sm group-hover:-translate-y-1 group-hover:shadow-md group-hover:shadow-apricot-950/25 duration-700 
+                    transition-all rounded-full size-fit p-2 flex items-center drop-shadow mx-auto">
+                    <Icon name="lucide-eye" size="2rem" class="text-apricot-50  transition-all"></Icon>
                 </span>
-                <CardTitle class="capitalize cursor-default font-serif tracking-wide text-3xl">{{ $t('adj_4') }}
+                <CardTitle :lang="locale.code" class="break-words hyphens-auto font-serif tracking-wide text-2xl mt-2">
+                    {{
+                        $t('adj_4')
+                    }}
                 </CardTitle>
             </CardHeader>
-            <CardContent class="text-mortar-950 max-w-prose">
+            <CardContent
+                class="text-mortar-950/90 max-w-prose text-balance text-center text-xs xs:text-sm leading-snug -mt-4">
                 {{ $t('card_content_4') }}
             </CardContent>
-            <!-- <CardFooter>
-                <Button as-child>
-                    <a href="#">
-                        <span class=" bg-mortar-950 rounded-full size-fit p-2 flex items-center justify-center drop-shadow mx-auto">
-                            <Icon name="lucide-arrow-right"></Icon>
-                        </span>Läs mer 
-                    </a>
-                </Button>
-            </CardFooter> -->
         </Card>
 
+        <hr class="visible xs:hidden border-mortar-950/50 border-[1px] rounded-full border-dashed">
+
         <Card
-            class="bg-transparent border-none shadow-none text-center hover:bg-apricot-50 hover:shadow-inner hover:shadow-apricot-100 transition-all duration-300 ">
-            <CardHeader class="py-4 gap-4 drop-shadow-sm">
-                <span
-                    class=" bg-mortar-950 rounded-full size-fit p-2 flex items-center justify-center drop-shadow mx-auto">
-                    <Icon name="lucide-rocket" size="2rem" class="text-apricot-50"></Icon>
+            class="group items-center flex flex-col bg-transparent border-none shadow-none text-start hover:bg-apricot-50 hover:drop-shadow-xl transition-all duration-300">
+            <CardHeader class="gap-2 drop-shadow-sm">
+                <span class="bg-gradient-to-t from-mortar-950 to-mortar-900 shadow-sm group-hover:-translate-y-1 group-hover:shadow-md group-hover:shadow-apricot-950/25 duration-700 
+                    transition-all rounded-full size-fit p-2 flex items-center drop-shadow mx-auto">
+                    <Icon name="lucide-rocket" size="2rem" class="text-apricot-50  transition-all"></Icon>
                 </span>
-                <CardTitle class="capitalize cursor-default font-serif tracking-wide text-3xl">{{ $t('adj_5') }}
+                <CardTitle :lang="locale.code" class="break-words hyphens-auto font-serif tracking-wide text-2xl mt-2">
+                    {{
+                        $t('adj_5')
+                    }}
                 </CardTitle>
             </CardHeader>
-            <CardContent class="text-mortar-950 max-w-prose">
+            <CardContent
+                class="text-mortar-950/90 max-w-prose text-balance text-center text-xs xs:text-sm leading-snug -mt-4">
                 {{ $t('card_content_5') }}
             </CardContent>
-            <!-- <CardFooter>
-                <Button as-child>
-                    <a href="#">
-                        <span class=" bg-mortar-950 rounded-full size-fit p-2 flex items-center justify-center drop-shadow mx-auto">
-                            <Icon name="lucide-arrow-right"></Icon>
-                        </span>Läs mer 
-                    </a>
-                </Button>
-            </CardFooter> -->
         </Card>
 
+        <hr class="visible xs:hidden border-mortar-950/50 border-[1px] rounded-full border-dashed">
+
         <Card
-            class="bg-transparent border-none shadow-none text-center hover:bg-apricot-50 hover:shadow-inner hover:shadow-apricot-100 transition-all duration-300 ">
-            <CardHeader class="py-4 gap-4 drop-shadow-sm">
-                <span
-                    class=" bg-mortar-950 rounded-full size-fit p-2 flex items-center justify-center drop-shadow mx-auto">
-                    <Icon name="lucide-puzzle" size="2rem" class="text-apricot-50"></Icon>
+            class="group items-center flex flex-col bg-transparent border-none shadow-none text-start hover:bg-apricot-50 hover:drop-shadow-xl transition-all duration-300">
+            <CardHeader class="gap-2 drop-shadow-sm">
+                <span class="bg-gradient-to-t from-mortar-950 to-mortar-900 shadow-sm group-hover:-translate-y-1 group-hover:shadow-md group-hover:shadow-apricot-950/25 duration-700 
+                    transition-all rounded-full size-fit p-2 flex items-center drop-shadow mx-auto">
+                    <Icon name="lucide-search-check" size="2rem" class="text-apricot-50  transition-all">
+                    </Icon>
                 </span>
-                <CardTitle class="capitalize cursor-default font-serif tracking-wide text-3xl">{{ $t('adj_6') }}
+                <CardTitle :lang="locale.code" class="break-words hyphens-auto font-serif tracking-wide text-2xl mt-2">
+                    {{
+                        $t('adj_6')
+                    }}
                 </CardTitle>
             </CardHeader>
-            <CardContent class="text-mortar-950 max-w-prose">
+            <CardContent
+                class="text-mortar-950/90 max-w-prose text-balance text-center text-xs xs:text-sm leading-snug -mt-4">
                 {{ $t('card_content_6') }}
             </CardContent>
-            <!-- <CardFooter>
-                <Button as-child>
-                    <a href="#">
-                        <span class=" bg-mortar-950 rounded-full size-fit p-2 flex items-center justify-center drop-shadow mx-auto">
-                            <Icon name="lucide-arrow-right"></Icon>
-                        </span>Läs mer 
-                    </a>
-                </Button>
-            </CardFooter> -->
         </Card>
     </div>
 </template>
-
-<style></style>
