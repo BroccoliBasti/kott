@@ -1,13 +1,30 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-export default defineNuxtConfig({
+
+export default {
   compatibilityDate: '2024-04-03',
+  ssr: true,
   devtools: { enabled: false },
+  // runtimeConfig: {
+  //   public: {
+  //     posthogPublicKey: 'phc_75jD9qdFPHxh45R1JNx0ludV6pYCIc93C0XeLq4u3v1',
+  //     posthogHost: 'https://eu.i.posthog.com'
+  //   }
+  // },
+
   css: ['~/assets/css/main.css'],
 
   app: {
     head: {
       link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }]
     },
+  },
+
+  site: {
+    trailingSlash: false
+  },
+
+  experimental: {
+    scanPageMeta: true,
   },
   
   postcss: {
@@ -18,12 +35,21 @@ export default defineNuxtConfig({
   },
 
   modules: [
-    "@nuxtjs/i18n",
-    "@nuxt/icon",
     "@nuxtjs/tailwindcss",
     "shadcn-nuxt",
-    "@nuxt/image"
+    "@nuxt/icon",
+    "@nuxt/image",
+    "@nuxtjs/i18n",
+    '@nuxt/content',
+    'nuxt-security'
   ],
+
+  icon: {
+    clientBundle: {
+      scan: true,
+      sizeLimitKb: 256,
+    },
+  },
 
   shadcn: {
     prefix: '',
@@ -40,8 +66,69 @@ export default defineNuxtConfig({
   },
 
   i18n: {
-    locales: ['en', 'sv'],
+    baseUrl: 'https://kott.fi',
+    locales: [
+      {
+        code: 'en',
+        language: 'en-US',
+        name: "English",
+        file: 'en-US.json'
+      },
+      {
+        code: 'sv',
+        language: 'sv-FI',
+        name: "Svenska",
+        file: 'sv-FI.json'
+      }
+    ],
     strategy: 'prefix_except_default',
-    defaultLocale: 'sv'
-  }
-})
+    lazy: true,
+    defaultLocale: 'sv',
+    detectBrowserLanguage: {
+      useCookie: false
+    },
+    parsePages: false,
+    customRoutes: 'config',
+    pages: {
+      work: {
+        sv: '/arbete',
+        en: '/work'
+      },
+      'work-slug': {
+        sv: '/arbete/[...slug]',
+        en: '/work/[...slug]'
+      },
+      privacy: {
+        sv: '/integritetspolicy',
+        en: '/privacy_policy'
+      }
+    }
+  },
+
+  security: {
+    headers: {
+      crossOriginEmbedderPolicy: 'require-corp',
+      crossOriginOpenerPolicy: 'same-origin', 
+      contentSecurityPolicy: {
+        'script-src': [
+          "'self'",
+          "https:",
+          "'unsafe-inline'",
+          "'unsafe-eval'",
+          "'unsafe-hashes'",
+          "'strict-dynamic'",
+          "'nonce-{{nonce}}'"
+        ],
+        'script-src-attr': [
+          "'self'",
+          "https:",
+          "'unsafe-inline'",
+          "'unsafe-eval'",
+          "'unsafe-hashes'",
+          "'nonce-{{nonce}}'",
+          "data-error"
+        ],
+      }
+    },
+  },
+}
