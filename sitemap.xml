@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+
+<url>
+  <loc>https://kott.fi</loc>
+  <lastmod>2025-01-28T12:58:26+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://kott.fi/arbete</loc>
+  <lastmod>2025-01-28T12:58:26+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://kott.fi/integritetspolicy</loc>
+  <lastmod>2025-01-28T12:58:26+00:00</lastmod>
+  <priority>0.20</priority>
+</url>
+<url>
+  <loc>https://kott.fi/en</loc>
+  <lastmod>2025-01-28T12:58:26+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://kott.fi/arbete/jongredmark</loc>
+  <lastmod>2025-01-28T12:58:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kott.fi/arbete/sb_grav</loc>
+  <lastmod>2025-01-28T12:58:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kott.fi/en/work</loc>
+  <lastmod>2025-01-28T12:58:26+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://kott.fi/en/privacy_policy</loc>
+  <lastmod>2025-01-28T12:58:26+00:00</lastmod>
+  <priority>0.20</priority>
+</url>
+<url>
+  <loc>https://kott.fi/en/work/jongredmark</loc>
+  <lastmod>2025-01-28T12:58:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kott.fi/en/work/sb_grav</loc>
+  <lastmod>2025-01-28T12:58:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>
