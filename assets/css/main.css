@@ -9,14 +9,14 @@
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: url("../fonts/Lexend-VariableFont_wght.ttf") format("truetype");
+    src: url("../fonts/Lexend-Regular.woff2") format("WOFF2");
   }
   @font-face {
     font-family: "Calistoga";
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: url("../fonts/Calistoga-Regular.ttf") format("truetype");
+    src: url("../fonts/Calistoga-Regular.woff2") format("WOFF2");
   }
 
   :root {
