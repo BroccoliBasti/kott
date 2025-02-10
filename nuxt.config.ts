@@ -4,12 +4,6 @@ export default {
   compatibilityDate: '2024-04-03',
   ssr: true,
   devtools: { enabled: false },
-  // runtimeConfig: {
-  //   public: {
-  //     posthogPublicKey: 'phc_75jD9qdFPHxh45R1JNx0ludV6pYCIc93C0XeLq4u3v1',
-  //     posthogHost: 'https://eu.i.posthog.com'
-  //   }
-  // },
 
   css: ['~/assets/css/main.css'],
 
