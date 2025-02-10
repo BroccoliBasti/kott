@@ -22,10 +22,10 @@ useSeoMeta({
 
 <template>
   <article
-    class="min-h-[calc(84svh-60px)] container flex flex-col items-center gap-0 xs:gap-6 sm:gap-8 md:gap-12 md:w-[75%] max-w-prose mt-4 sm:mt-0 mb-32 px-2 xs:px-6">
+    class="min-h-[calc(84svh-60px)] container flex flex-col items-center gap-0 xs:gap-6 sm:gap-8 md:gap-12 md:w-[75%] max-w-prose mt-4 sm:mt-0 mb-32 px-4 xs:px-8">
     <header class="grid justify-items-center">
-      <NuxtLink :to="localePath('work')" class="text-xs sm:text-sm md:text-base !no-underline pb-1 text-apricot-950/50">
-        Kott<span class="text-2xl pe-1">܀</span>blog
+      <NuxtLink :to="localePath('work')" class="text-xs sm:text-sm md:text-base !no-underline text-apricot-950/50">
+        Kott<span class="text-2xl">܀</span>blog
       </NuxtLink>
       <h1
         class="text-2xl sm:text-4xl md:text-5xl font-serif text-balance text-center whitespace-nowrap overflow-visible max-w-screen h-fit leading-none">
@@ -56,9 +56,9 @@ useSeoMeta({
     </figure>
 
     <main id="main">
-      <ContentRenderer v-if="page" :value="page" class="max-w-prose" />
+      <ContentRenderer v-if="page" :value="page" class="max-w-prose text-sm md:text-base" />
 
-      <p class="!first-letter:text-base !first-letter:font-sans">
+      <p class="!text-sm md:!text-base !first-letter:font-sans">
         {{ $t('visit_here') }}
         <NuxtLink :to="'https://' + page.siteURL" external>{{ page.siteURL }}</NuxtLink>.
       </p>

@@ -33,7 +33,7 @@ useSeoMeta({
                     class="group grid w-fit items-center overflow-hidden border-none rounded-lg bg-white text-center text-foreground shadow-lg shadow-apricot-900/15 drop-shadow duration-1000 motion-safe:transition-all sm:flex sm:max-w-fit lg:max-w-[420px] sm:flex-row md:justify-evenly lg:grid lg:items-baseline lg:justify-normal motion-safe:animate-page-load">
                     <NuxtImg :src="'/img/work' + page.pageURL + page.pageURL + '.webp'" height="420" width="420"
                         :alt="page.imageDescription"
-                        class="row-span-2 pt-4 sm:pt-0 aspect-[2/1] sm:h-[50%] object-contain place-self-center[image-rendering:_high-quality] h-full w-full lg:w-full sm:aspect-square lg:h-full max-w-full">
+                        class="row-span-2 pt-4 sm:pt-0 aspect-[2/1] sm:min-w-[50%] object-contain place-self-center[image-rendering:_high-quality] h-full w-full lg:w-full sm:aspect-square lg:h-full max-w-full">
                     </NuxtImg>
                     <div
                         class="flex h-full w-full flex-col items-center pb-8 pt-4 sm:min-w-[50%] sm:justify-center lg:justify-start">
