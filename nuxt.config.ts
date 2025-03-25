@@ -95,7 +95,10 @@ export default {
       privacy: {
         sv: '/integritetspolicy',
         en: '/privacy_policy'
-      }
+      },
+      bundle: {
+        optimizeTranslationDirective: false,
+      },
     }
   },
 

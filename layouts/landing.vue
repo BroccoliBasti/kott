@@ -14,7 +14,6 @@ useHead({
 <template>
     <div class="content">
         <NuxtRouteAnnouncer />
-        <NuxtLoadingIndicator />
         <SkipLink></SkipLink>
         <slot />
         <KottFooter />

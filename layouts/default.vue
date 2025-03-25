@@ -11,7 +11,6 @@ const head = useLocaleHead({
     </Html>
     <div>
         <NuxtRouteAnnouncer />
-        <NuxtLoadingIndicator />
         <SkipLink></SkipLink>
         <NuxtImg src="/img/wave1.svg" width="960" height="69"
             class="flex h-fit w-full min-w-svw object-fill rotate-180 pointer-events-none select-none"
