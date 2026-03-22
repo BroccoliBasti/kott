@@ -47,16 +47,11 @@ export default {
 
   shadcn: {
     prefix: '',
-    componentDir: './components/ui'
+    componentDir: '@/app/components/ui'
   },
 
   typescript: {
-    includeWorkspace: true,
-    tsConfig: {
-      compilerOptions: {
-        baseUrl: '.'
-      }
-    }
+    includeWorkspace: true
   },
 
   i18n: {
@@ -82,6 +77,7 @@ export default {
       useCookie: false
     },
     parsePages: false,
+    bundle: {optimizeTranslationDirective: false},
     customRoutes: 'config',
     pages: {
       work: {

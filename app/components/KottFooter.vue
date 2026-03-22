@@ -6,7 +6,7 @@ const localePath = useLocalePath();
     drop-shadow-[0_-.25rem_0_#F3976F]">
         <div class="grid grid-flow-row justify-evenly">
             <div>{{ $t('made_by') }} Sebastian Renkonen</div>
-            <div>&COPY; 2025</div>
+            <div>&COPY; 2026</div>
         </div>
         <NuxtLink :to="localePath('privacy')"
             class="flex w-fit mx-auto hover:underline hover:decoration-[1.5px] items-center">{{

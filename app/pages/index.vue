@@ -27,7 +27,7 @@ definePageMeta({
         <div class="flex flex-col items-center gap-4">
             <h1
                 class="self-center flex flex-col w-fit sm:gap-3 items-center drop-shadow-sm pt-4 motion-safe:animate-page-load-2">
-                <span class="font-serif text-center text-xl md:text-5xl after:content-[url('public/img/emphasis.svg')]">
+                <span class="font-serif text-center text-xl md:text-5xl after:content-[url('/img/emphasis.svg')]">
                     {{ $t('mission_statement_0') }}
                     <br>
                     {{ $t('mission_statement_1') }}
